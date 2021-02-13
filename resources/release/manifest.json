@@ -1,0 +1,40 @@
+{
+  "name": "discoverable-json",
+  "version": "0.1.0",
+  "browser_action": {
+    "default_title": "Show the popup",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/dj_icon_16.png",
+    "32": "images/dj_icon_32.png",
+    "48": "images/dj_icon_48.png",
+    "128": "images/dj_icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "compiled/content-script.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    "css/bootstrap.css",
+    "css/material-design-iconic-font.min.css",
+    "css/re-com.css",
+    "css/gron.css"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "manifest_version": 2
+}
