@@ -4,6 +4,9 @@ Dicoverable Json Extension flattens your JSON data (however nested) into valid j
 
 It automatically reconstructs your data manipulation back to valid JSON. You can also download the end result.
 
+## Install from Google Webstore
+[https://chrome.google.com/webstore/detail/discoverable-json/pcakbljjigdafljigcpbmjllkbhlncjg](https://chrome.google.com/webstore/detail/discoverable-json/pcakbljjigdafljigcpbmjllkbhlncjg)
+
 ## Installation
 1. Install Java.
 2. Install [leiningen](http://leiningen.org).
